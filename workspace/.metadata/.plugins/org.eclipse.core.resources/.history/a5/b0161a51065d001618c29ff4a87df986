@@ -1,0 +1,5 @@
+object des {  // discrete event simulation
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+  object sim extends Circuits with Parameters
+}

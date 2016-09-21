@@ -1,0 +1,40 @@
+package week4
+
+abstract class CodeTree {
+  def toString: String
+}
+case class Fork(left: CodeTree, right: CodeTree, chars: List[Char], weight: Int) extends CodeTree {
+  override def toString: String = left.toString + right.toString
+}
+case class Leaf(char: Char, weight: Int) extends CodeTree {
+  override def toString: String = char.toString
+}
+
+object huffman {
+  def weight(tree: CodeTree): Int = tree match {
+    case Leaf(c, w)        => w
+    case Fork(l, r, cs, w) => weight(l) + weight(r)
+  }
+  def chars(tree: CodeTree): List[Char] = tree match {
+    case Leaf(c, w)        => List(c)
+    case Fork(l, r, cs, w) => chars(l) ::: chars(r)
+  }
+  def makeCodeTree(left: CodeTree, right: CodeTree) =
+    Fork(left, right, chars(left) ::: chars(right), weight(left) + weight(right))
+
+  // count how many times (n) each char (c) is used in chars and return a list of (c,n)
+  def times(chars: List[Char]): List[(Char, Int)] = {
+    def update(c: Char, list: List[(Char, Int)]): List[(Char, Int)] = list match {
+      case List()       => List((c, 1))
+      case (x, n) :: xs => if (x == c) (c, n + 1) :: xs else (x, n) :: update(c, xs)
+    }
+    chars match {
+      case List()  => List()
+      case List(c) => List((c, 1))
+      case c :: cs => update(c, times(cs))
+    }
+  }
+
+  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
+}
+

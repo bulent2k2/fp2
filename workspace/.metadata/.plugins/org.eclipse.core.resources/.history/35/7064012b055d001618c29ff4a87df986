@@ -1,0 +1,24 @@
+object test {
+  println("Welcome to the Scala worksheet")
+  // pp the pouring problem
+  val pp = new PouringOLD(Vector(4, 9))
+  // (4, 9), instead of (4, 7) takes a lot longer with original impl (without perf optimization)
+  pp.initialState
+
+  pp.initialState updated (0, 10)
+  pp.initialState
+  pp.glasses
+  pp.moves
+
+  pp.pathSets.drop(2).take(1).toList.head
+
+  pp.solution(6).take(3).toList.mkString("\n")
+
+  val p2 = new Pouring(Vector(4, 9, 19))
+  p2.moves
+  p2.solution(17)
+
+  val p3 = new Pouring(Vector(4, 8, 12, 15))
+  p3.solution(13)
+}
+

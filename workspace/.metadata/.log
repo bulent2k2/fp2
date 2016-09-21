@@ -1,0 +1,1742 @@
+!SESSION 2016-05-29 23:22:49.983 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-29 23:25:25.233
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2016-06-01 08:20:12.190
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Text.getText(Text.java:1351)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$4$1.run(QuickAccessContents.java:579)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4273)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3360)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2016-06-02 11:40:29.208
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.handlers.QuitHandler.execute(QuitHandler.java:37)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:343)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:159)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 73 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-06-02 11:40:29.212
+!MESSAGE Exception occurred while unrendering: org.eclipse.e4.ui.model.application.ui.basic.impl.TrimmedWindowImpl@70e0023d (elementId: IDEWindow, tags: [topLevel, shellMaximized], contributorURI: platform:/plugin/org.eclipse.ui.workbench) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (label: %trimmedwindow.label.eclipseSDK, iconURI: null, tooltip: null, context: null, variables: [], x: 1813, y: 16, width: 1024, height: 768)
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.handlers.QuitHandler.execute(QuitHandler.java:37)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:343)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:159)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 73 more
+!SESSION 2016-06-02 11:48:42.142 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-02 11:49:00.385
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-02 11:49:08.827 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-02 11:49:24.200
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-03 09:21:43.828 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-03 09:22:02.765
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-07 13:17:11.216 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-07 13:17:29.017
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-08 16:27:06.487 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-08 16:27:25.424
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-20 09:45:37.921 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-06-20 10:49:31.155
+!MESSAGE Error during instrumentation of ScriptCompilationUnit(L/procfun/src/week2/dProductWithCurrying.sc)
+!STACK 0
+org.scalaide.worksheet.runtime.ProgramInstrumentationFailed: Error during askInstrumented of unit dProductWithCurrying.sc
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrumentProgram(SourceInstrumenter.scala:41)
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrument(SourceInstrumenter.scala:24)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$receive$1.applyOrElse(WorksheetRunner.scala:73)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.aroundReceive(WorksheetRunner.scala:44)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+	at scala.Array$.copy(Array.scala:105)
+	at scala.tools.nsc.interactive.ScratchPadMaker2$Patcher$$anonfun$result$2.apply(ScratchPadMaker2.scala:148)
+	at scala.tools.nsc.interactive.ScratchPadMaker2$Patcher$$anonfun$result$2.apply(ScratchPadMaker2.scala:145)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.tools.nsc.interactive.ScratchPadMaker2$Patcher.result(ScratchPadMaker2.scala:145)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$.scala$tools$nsc$interactive$ProgramInstrumenter$Instrumenter$$instrumentation(ProgramInstrumenter.scala:35)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$$anonfun$askInstrumentation$1.apply(ProgramInstrumenter.scala:15)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$$anonfun$askInstrumentation$1.apply(ProgramInstrumenter.scala:15)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:701)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:701)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:708)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:701)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$.askInstrumentation(ProgramInstrumenter.scala:14)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$$anonfun$1.apply$mcV$sp(ProgramInstrumenter.scala:52)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$$anonfun$1.apply(ProgramInstrumenter.scala:52)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$$anonfun$1.apply(ProgramInstrumenter.scala:52)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:457)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:431)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+!SESSION 2016-06-20 13:02:30.284 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2016-06-20 13:12:31.446
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.jface.text.BadLocationException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1055)
+	at org.eclipse.jface.text.TreeLineTracker.getLineInformation(TreeLineTracker.java:1182)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineInformation(AbstractLineTracker.java:137)
+	at org.eclipse.jface.text.AbstractDocument.getLineInformation(AbstractDocument.java:929)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineInformation(SynchronizableDocument.java:337)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.offsetOf(ScriptEditor.scala:102)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy$$anonfun$replaceWith$1.apply$mcV$sp(ScriptEditor.scala:90)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy$$anonfun$runInUi$1.apply$mcV$sp(ScriptEditor.scala:158)
+	at org.scalaide.util.ui.DisplayThread$$anon$1.run(DisplayThread.scala:16)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 23 more
+!SESSION 2016-06-21 10:28:17.591 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2016-06-21 18:39:43.815
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.AssertionError: assertion failed: Race condition detected: You are running a presentation compiler method outside the PC thread.[phase: <no phase>] Please file a ticket with the current stack trace at https://www.assembla.com/spaces/scala-ide/support/tickets
+	at scala.tools.nsc.interactive.Global.assertCorrectThread(Global.scala:537)
+	at scala.reflect.internal.Symbols$Symbol.rawInfo(Symbols.scala:1590)
+	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1524)
+	at scala.reflect.internal.Symbols$Symbol.ancestors(Symbols.scala:2129)
+	at scala.reflect.internal.Symbols$Symbol.allOverriddenSymbols(Symbols.scala:2374)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2$$anonfun$apply$1.apply(ScalaOverrideIndicatorBuilder.scala:70)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2$$anonfun$apply$1.apply(ScalaOverrideIndicatorBuilder.scala:68)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2.apply(ScalaOverrideIndicatorBuilder.scala:68)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2.apply(ScalaOverrideIndicatorBuilder.scala:62)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:99)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:98)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:98)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:56)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator.open(ScalaOverrideIndicatorBuilder.scala:62)
+	at scala.tools.eclipse.contribution.weaving.jdt.hierarchy.HierarchyAspect.ajc$around$scala_tools_eclipse_contribution_weaving_jdt_hierarchy_HierarchyAspect$6$4713d8eb(HierarchyAspect.aj:169)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaSelectAnnotationRulerAction.runWithEvent(JavaSelectAnnotationRulerAction.java:88)
+	at org.eclipse.ui.texteditor.AbstractRulerActionDelegate.runWithEvent(AbstractRulerActionDelegate.java:112)
+	at org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy.execute(ActionDelegateHandlerProxy.java:291)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.actions.ContributedAction.runWithEvent(ContributedAction.java:192)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.triggerAction(AbstractTextEditor.java:3082)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.access$1(AbstractTextEditor.java:3065)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$15.run(AbstractTextEditor.java:3096)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4273)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3360)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2016-06-21 18:39:45.336
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.AssertionError: assertion failed: Race condition detected: You are running a presentation compiler method outside the PC thread.[phase: <no phase>] Please file a ticket with the current stack trace at https://www.assembla.com/spaces/scala-ide/support/tickets
+	at scala.tools.nsc.interactive.Global.assertCorrectThread(Global.scala:537)
+	at scala.reflect.internal.Symbols$Symbol.rawInfo(Symbols.scala:1590)
+	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1524)
+	at scala.reflect.internal.Symbols$Symbol.ancestors(Symbols.scala:2129)
+	at scala.reflect.internal.Symbols$Symbol.allOverriddenSymbols(Symbols.scala:2374)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2$$anonfun$apply$1.apply(ScalaOverrideIndicatorBuilder.scala:70)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2$$anonfun$apply$1.apply(ScalaOverrideIndicatorBuilder.scala:68)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2.apply(ScalaOverrideIndicatorBuilder.scala:68)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator$$anonfun$open$2.apply(ScalaOverrideIndicatorBuilder.scala:62)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:99)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:98)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:98)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:56)
+	at org.scalaide.ui.internal.jdt.model.ScalaIndicator.open(ScalaOverrideIndicatorBuilder.scala:62)
+	at scala.tools.eclipse.contribution.weaving.jdt.hierarchy.HierarchyAspect.ajc$around$scala_tools_eclipse_contribution_weaving_jdt_hierarchy_HierarchyAspect$6$4713d8eb(HierarchyAspect.aj:169)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaSelectAnnotationRulerAction.runWithEvent(JavaSelectAnnotationRulerAction.java:88)
+	at org.eclipse.ui.texteditor.AbstractRulerActionDelegate.runWithEvent(AbstractRulerActionDelegate.java:112)
+	at org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy.execute(ActionDelegateHandlerProxy.java:291)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.actions.ContributedAction.runWithEvent(ContributedAction.java:192)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.triggerAction(AbstractTextEditor.java:3082)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.access$1(AbstractTextEditor.java:3065)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$15.run(AbstractTextEditor.java:3096)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4273)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3360)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2016-06-24 10:56:51.351 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-06-24 11:06:17.924
+!MESSAGE Unexptected error - most likely due to an illegal position
+!STACK 0
+java.lang.AssertionError: assertion failed: bad position: [1401:1397]
+	at scala.reflect.internal.util.Position$.validate(Position.scala:34)
+	at scala.reflect.internal.util.Position$.range(Position.scala:51)
+	at scala.reflect.internal.util.InternalPositionImpl$class.copyRange(Position.scala:205)
+	at scala.reflect.internal.util.InternalPositionImpl$class.withStart(Position.scala:124)
+	at scala.reflect.internal.util.Position.withStart(Position.scala:12)
+	at scala.tools.refactoring.common.EnrichedTrees$TreeMethodsForPositions.namePosition(EnrichedTrees.scala:268)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$$anonfun$8.apply(SafeSymbol.scala:138)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$$anonfun$8.apply(SafeSymbol.scala:138)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:457)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:431)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-06-24 11:06:30.365
+!MESSAGE Unexptected error - most likely due to an illegal position
+!STACK 0
+java.lang.AssertionError: assertion failed: bad position: [123:119]
+	at scala.reflect.internal.util.Position$.validate(Position.scala:34)
+	at scala.reflect.internal.util.Position$.range(Position.scala:51)
+	at scala.reflect.internal.util.InternalPositionImpl$class.copyRange(Position.scala:205)
+	at scala.reflect.internal.util.InternalPositionImpl$class.withStart(Position.scala:124)
+	at scala.reflect.internal.util.Position.withStart(Position.scala:12)
+	at scala.tools.refactoring.common.EnrichedTrees$TreeMethodsForPositions.namePosition(EnrichedTrees.scala:268)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$$anonfun$8.apply(SafeSymbol.scala:138)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$$anonfun$8.apply(SafeSymbol.scala:138)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:457)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:431)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:520)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:361)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5418)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5423)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5370)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5374)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5452)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:3047)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.collection.immutable.List.loop$1(List.scala:173)
+	at scala.collection.immutable.List.mapConserve(List.scala:189)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1921)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1808)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5310)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5359)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5396)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5423)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5370)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5374)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5452)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:3047)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$65.apply(Typers.scala:3151)
+	at scala.collection.immutable.List.loop$1(List.scala:173)
+	at scala.collection.immutable.List.mapConserve(List.scala:189)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3151)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5015)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5312)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5359)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5396)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5423)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5370)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5374)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5448)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase$$anonfun$applyPhase$1.apply$mcV$sp(Global.scala:440)
+	at scala.tools.nsc.Global$GlobalPhase.withCurrentUnit(Global.scala:431)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:440)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1338)
+	at scala.reflect.internal.SymbolTable.enteringPhase(SymbolTable.scala:235)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1331)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:670)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5$$anonfun$apply$8.apply(Global.scala:585)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:581)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:581)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:581)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+!SESSION 2016-06-26 04:26:36.935 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-06-26 04:27:04.131
+!MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl huffman.scala
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3320)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1039)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1039)
+	at org.eclipse.ui.texteditor.StatusTextEditor.setFocus(StatusTextEditor.java:120)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.setFocus(JavaEditor.java:2389)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:253)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:225)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:795)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.setFocus(ContributedPartRenderer.java:100)
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:332)
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2555)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1052)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3818)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3098)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3055)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1259)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:69)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1258)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1215)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1218)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$3(StackRenderer.java:1200)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$12.close(StackRenderer.java:1092)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1874)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:288)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2016-06-26 13:27:11.482 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 1 0 2016-06-29 14:55:56.622
+!MESSAGE Timeout while resolving hyperlink in C:\Users\bbasaran\fp\workspace\procfun\src\reference\Expr.scala at: offset: 570, length: 0
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-06-29 15:04:36.688
+!MESSAGE Error during instrumentation of ScriptCompilationUnit(L/procfun/src/reference/testExpr.sc)
+!STACK 0
+org.scalaide.worksheet.runtime.ProgramInstrumentationFailed: Error during askInstrumented of unit testExpr.sc
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrumentProgram(SourceInstrumenter.scala:41)
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrument(SourceInstrumenter.scala:24)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$receive$1.applyOrElse(WorksheetRunner.scala:73)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.aroundReceive(WorksheetRunner.scala:44)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+	at scala.Array$.copy(Array.scala:105)
+	at scala.tools.nsc.interactive.ScratchPadMaker2$Patcher$$anonfun$result$2.apply(ScratchPadMaker2.scala:148)
+	at scala.tools.nsc.interactive.ScratchPadMaker2$Patcher$$anonfun$result$2.apply(ScratchPadMaker2.scala:145)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at scala.tools.nsc.interactive.ScratchPadMaker2$Patcher.result(ScratchPadMaker2.scala:145)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$.scala$tools$nsc$interactive$ProgramInstrumenter$Instrumenter$$instrumentation(ProgramInstrumenter.scala:35)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$$anonfun$askInstrumentation$1.apply(ProgramInstrumenter.scala:15)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$$anonfun$askInstrumentation$1.apply(ProgramInstrumenter.scala:15)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:701)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:701)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:708)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:701)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$Instrumenter$.askInstrumentation(ProgramInstrumenter.scala:14)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$$anonfun$1.apply$mcV$sp(ProgramInstrumenter.scala:52)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$$anonfun$1.apply(ProgramInstrumenter.scala:52)
+	at scala.tools.nsc.interactive.ProgramInstrumenter$$anonfun$1.apply(ProgramInstrumenter.scala:52)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:457)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:431)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+!SESSION 2016-06-30 11:38:47.833 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-06-30 11:38:53.071
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2016-07-16 08:15:56.172 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2016-07-19 10:02:53.781
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Label.setImage(Label.java:345)
+	at org.eclipse.jface.dialogs.TitleAreaDialog.setTitleImage(TitleAreaDialog.java:685)
+	at org.eclipse.jface.wizard.WizardDialog.hardClose(WizardDialog.java:918)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:861)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-07-19 10:02:53.851
+!MESSAGE An error occurred while trying to create a file.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/pouring-water/src/Pouring.scala' already exists.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:307)
+	at org.eclipse.core.internal.resources.File.create(File.java:112)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:93)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:84)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:84)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:84)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:284)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:283)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:283)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:356)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:465)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.openFileInSrcDir$1(NewFileWizard.scala:364)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.org$scalaide$ui$internal$wizards$NewFileWizard$$openEditor(NewFileWizard.scala:375)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:287)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:283)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:283)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.core.resources 4 374 2016-07-19 10:02:53.851
+!MESSAGE Resource '/pouring-water/src/Pouring.scala' already exists.
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-07-19 10:06:33.681
+!MESSAGE Unexptected error - most likely due to an illegal position
+!STACK 0
+java.lang.AssertionError: assertion failed: bad position: [64:62]
+	at scala.reflect.internal.util.Position$.validate(Position.scala:34)
+	at scala.reflect.internal.util.Position$.range(Position.scala:51)
+	at scala.reflect.internal.util.InternalPositionImpl$class.copyRange(Position.scala:205)
+	at scala.reflect.internal.util.InternalPositionImpl$class.withStart(Position.scala:124)
+	at scala.reflect.internal.util.Position.withStart(Position.scala:12)
+	at scala.tools.refactoring.common.EnrichedTrees$TreeMethodsForPositions.namePosition(EnrichedTrees.scala:197)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$class.safeSymbol(SafeSymbol.scala:154)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification.safeSymbol(SymbolClassification.scala:34)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification.org$scalaide$core$internal$decorators$semantichighlighting$classifier$SymbolClassification$$findSymbolInfo$1(SymbolClassification.scala:93)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:105)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:99)
+	at scala.reflect.api.Trees$Traverser$$anonfun$traverseStats$1$$anonfun$apply$1.apply$mcV$sp(Trees.scala:2498)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2507)
+	at scala.reflect.api.Trees$Traverser.traverseStats(Trees.scala:2497)
+	at scala.reflect.internal.Trees$class.traverseComponents$1(Trees.scala:1232)
+	at scala.reflect.internal.Trees$class.itraverse(Trees.scala:1330)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:16)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:16)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2475)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:108)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:99)
+	at scala.reflect.internal.Trees$$anonfun$traverseMemberDef$1$1.apply$mcV$sp(Trees.scala:1207)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2507)
+	at scala.reflect.internal.Trees$class.traverseMemberDef$1(Trees.scala:1203)
+	at scala.reflect.internal.Trees$class.itraverse(Trees.scala:1328)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:16)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:16)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2475)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:108)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:99)
+	at scala.reflect.api.Trees$Traverser$$anonfun$traverseStats$1$$anonfun$apply$1.apply$mcV$sp(Trees.scala:2498)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2507)
+	at scala.reflect.api.Trees$Traverser.traverseStats(Trees.scala:2497)
+	at scala.reflect.internal.Trees$class.itraverse(Trees.scala:1326)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:16)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:16)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2475)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification$$anon$1.traverse(SymbolClassification.scala:108)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SymbolClassification.classifySymbols(SymbolClassification.scala:110)
+	at org.scalaide.ui.internal.editor.decorators.semantichighlighting.Presenter$SemanticHighlightingJob$$anonfun$performSemanticHighlighting$1$$anonfun$apply$1.apply(Presenter.scala:123)
+	at org.scalaide.ui.internal.editor.decorators.semantichighlighting.Presenter$SemanticHighlightingJob$$anonfun$performSemanticHighlighting$1$$anonfun$apply$1.apply(Presenter.scala:119)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$$anonfun$withSourceFile$1.apply(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$$anonfun$withSourceFile$1.apply(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:99)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:98)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:98)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:56)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.internal.jdt.model.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:66)
+	at org.scalaide.ui.internal.editor.decorators.semantichighlighting.Presenter$SemanticHighlightingJob$$anonfun$performSemanticHighlighting$1.apply(Presenter.scala:119)
+	at org.scalaide.ui.internal.editor.decorators.semantichighlighting.Presenter$SemanticHighlightingJob$$anonfun$performSemanticHighlighting$1.apply(Presenter.scala:119)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.ui.internal.editor.decorators.semantichighlighting.Presenter$SemanticHighlightingJob.performSemanticHighlighting(Presenter.scala:119)
+	at org.scalaide.ui.internal.editor.decorators.semantichighlighting.Presenter$SemanticHighlightingJob.run(Presenter.scala:115)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2016-08-07 21:10:55.351 -----------------------------------------------
+eclipse.buildId=4.4.1-vfinal-2016-05-04T11:16:00Z-Typesafe
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:11:43.106
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/pouring-water/src/Pouring.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:316)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:972)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:11:43.106
+!MESSAGE Resource is out of sync with the file system: '/pouring-water/src/Pouring.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:11:43.106
+!MESSAGE Resource is out of sync with the file system: '/pouring-water/src/Pouring.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:11:48.096
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:11:48.096
+!MESSAGE Errors running builder 'Scala Builder' on project 'pouring-water'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/pouring-water/src/Pouring.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:316)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:972)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:11:48.096
+!MESSAGE Resource is out of sync with the file system: '/pouring-water/src/Pouring.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:11:48.096
+!MESSAGE Resource is out of sync with the file system: '/pouring-water/src/Pouring.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:38:34.023
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:38:34.023
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:38:34.023
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:38:34.023
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:38:34.023
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:38:34.023
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:38:34.023
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:38:47.352
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:38:47.352
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:38:47.352
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:38:47.352
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:38:47.352
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:38:47.352
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:38:47.352
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:39:14.881
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:14.882
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:14.882
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:39:14.894
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:39:14.894
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:39:14.894
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:14.894
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:39:35.463
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:35.463
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:35.463
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:39:35.466
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:39:35.466
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:39:35.466
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:35.466
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:39:43.541
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:43.541
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:43.541
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:39:43.545
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:39:43.546
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:39:43.546
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:43.546
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:39:55.905
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:55.906
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:55.906
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:39:55.908
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:39:55.909
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:39:55.909
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:39:55.909
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:40:14.712
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:40:14.712
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:40:14.712
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:40:14.712
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:40:14.712
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:40:14.712
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:40:14.712
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:40:22.820
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:40:22.820
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:40:22.820
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:40:22.820
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:40:22.820
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:40:22.820
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:40:22.820
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 21:41:08.387
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:41:08.387
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:41:08.387
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 21:41:08.387
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 21:41:08.387
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 21:41:08.387
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 21:41:08.387
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.scala-ide.sdt.core 4 0 2016-08-07 22:20:36.419
+!MESSAGE Unexptected error - most likely due to an illegal position
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.EnrichedTrees$TreeMethodsForPositions.nameString(EnrichedTrees.scala:355)
+	at scala.tools.refactoring.common.EnrichedTrees$TreeMethodsForPositions.namePosition(EnrichedTrees.scala:262)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$$anonfun$8.apply(SafeSymbol.scala:138)
+	at org.scalaide.core.internal.decorators.semantichighlighting.classifier.SafeSymbol$$anonfun$8.apply(SafeSymbol.scala:138)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:457)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:431)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.eclipse.core.resources 4 2 2016-08-07 22:20:56.790
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 22:20:56.791
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 22:20:56.791
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2016-08-07 22:20:56.795
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2016-08-07 22:20:56.795
+!MESSAGE Errors running builder 'Scala Builder' on project 'static-timing'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:128)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:110)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2016-08-07 22:20:56.796
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2016-08-07 22:20:56.796
+!MESSAGE Resource is out of sync with the file system: '/static-timing/src/Gates.scala'.

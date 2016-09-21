@@ -1,0 +1,17 @@
+object des { // discrete event simulation
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+
+  object sim extends Circuits with Parameters
+  import sim._
+  val in1, in2, sum, carry = new Gate.Wire        //> in1  : <error> = Gates$Wire@6e8dacdf
+                                                  //| in2  : <error> = Gates$Wire@7a79be86
+                                                  //| sum  : <error> = Gates$Wire@34ce8af7
+                                                  //| carry  : <error> = Gates$Wire@b684286
+
+  halfAdder(in1, in2, sum, carry)                 //> res0: <error> = ()
+  probe("sum", sum)                               //> sum 0 new-value = false
+                                                  //| res1: <error> = ()
+  probe("carry", carry)                           //> carry 0 new-value = false
+                                                  //| res2: <error> = ()
+
+}
